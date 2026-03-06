@@ -1,0 +1,27 @@
+/* Общие параметры */
+body {}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Выделение мыши */
+::selection {}
+
+/* Скроллбар */
+html {
+    scrollbar-gutter: stable;
+}
+&::-webkit-scrollbar {
+    background: white;
+    width: 6px;
+}
+&::-webkit-scrollbar-thumb {
+    background-color: pink;
+    border-radius: 4px;
+    background-clip: content-box;
+}
+&::-webkit-scrollbar-thumb:hover {
+    background-color: deeppink;
+}

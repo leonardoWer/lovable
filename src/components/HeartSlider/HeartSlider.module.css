@@ -1,0 +1,109 @@
+.sliderContainer {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem;
+    background: #F9BEED;
+    background: radial-gradient(at center, #F9BEED, #DC62D8);
+}
+
+.sliderWrapper {
+    position: relative;
+    width: 52vw;
+    height: 70vh;
+    margin: 0 auto;
+    transform: translateY(-20vh);
+}
+
+.card {
+    position: absolute;
+    aspect-ratio: 3/3.5;
+    width: 130px;
+    overflow: hidden;
+    cursor: pointer;
+    transform: translateX(-50%);
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: translateX(-50%) scale(1.3);
+    z-index: 99999 !important;
+}
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.indexBadge {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 24px;
+    height: 24px;
+    background: rgba(255, 105, 180, 0.9);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.titleContainer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+    width: 100%;
+}
+.titleText {
+    font-size: 1.2rem;
+}
+.textCarouselWrapper {
+    height: 1.8rem;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+}
+.textCarousel {
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+.carouselItem {
+    height: 1.8rem;
+    overflow: hidden;
+    margin: 0;
+    font-size: 1.8rem;
+    font-family: "Amagro", sans-serif;
+    white-space: nowrap;
+}
+
+@media (max-width: 1200px) {
+    .sliderWrapper {
+        width: 70vw;
+    }
+}
+@media (max-width: 768px) {
+    .sliderWrapper {
+        width: 95vw;
+    }
+    .card {
+        width: 100px;
+        height: 100px;
+    }
+
+    .sliderCardTitle {
+        font-size: 1.4rem;
+    }
+
+    .titleText {
+        font-size: 1rem;
+    }
+}
