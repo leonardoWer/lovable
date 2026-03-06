@@ -3,6 +3,7 @@ import {resolve} from 'path';
 
 export default defineConfig({
     root: './', // Корневая директория проекта
+    base: '/lovable/',
     resolve: {
         alias: {
             's': resolve(__dirname, './src'),
