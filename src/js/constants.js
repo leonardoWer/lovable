@@ -1,6 +1,6 @@
 export const SLIDER_CONFIG = {
     IMAGES_COUNT: 15,
-    IMAGES_PATH: '/img/dasha/',
+    IMAGES_PATH: 'img/dasha/',
 
     SCROLL_SENSITIVITY: 0.3,
 
